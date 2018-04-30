@@ -4,7 +4,7 @@ using System.Reflection;
 using Xunit.Abstractions;
 using Xunit.Sdk;
 
-namespace XunitExtensions
+namespace Melon.xUnit.Bdd.XunitExtensions
 {
     public class ObservationExecutor : TestFrameworkExecutor<ObservationTestCase>
     {
@@ -22,7 +22,11 @@ namespace XunitExtensions
                                                    IMessageSink executionMessageSink,
                                                    ITestFrameworkExecutionOptions executionOptions)
         {
-            var testAssembly = new TestAssembly(AssemblyInfo, AppDomain.CurrentDomain.SetupInformation.ConfigurationFile);
+            string config = null;
+#if NET452
+            config = AppDomain.CurrentDomain.SetupInformation.ConfigurationFile;
+#endif
+            var testAssembly = new TestAssembly(AssemblyInfo, config);
 
             using (var assemblyRunner = new ObservationAssemblyRunner(testAssembly, testCases, DiagnosticMessageSink, executionMessageSink, executionOptions))
                 await assemblyRunner.RunAsync();

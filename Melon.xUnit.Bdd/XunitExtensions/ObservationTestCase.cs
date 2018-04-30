@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Xunit.Abstractions;
 using Xunit.Sdk;
 
-namespace XunitExtensions
+namespace Melon.xUnit.Bdd.XunitExtensions
 {
     public class ObservationTestCase : TestMethodTestCase
     {

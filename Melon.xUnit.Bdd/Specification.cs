@@ -1,7 +1,11 @@
-﻿namespace Melon.xUnit.Bdd.XunitExtensions
+﻿using System;
+namespace Melon.xUnit.Bdd
 {
-    public abstract class Specification
+    public abstract class SpecificationBase<TComponent>
+        where TComponent:class
     {
+        protected TComponent _underTest;
+
         protected virtual void Because() { }
 
         protected virtual void DestroyContext() { }

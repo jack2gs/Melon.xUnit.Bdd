@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace XunitExtensions
+namespace Melon.xUnit.Bdd.XunitExtensions
 {
     [AttributeUsage(AttributeTargets.Method)]
     public class ObservationAttribute : Attribute { }

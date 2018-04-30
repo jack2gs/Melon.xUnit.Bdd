@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Xunit.Sdk;
 
-namespace XunitExtensions
+namespace Melon.xUnit.Bdd.XunitExtensions
 {
     public class ObservationTestCaseRunner : TestCaseRunner<ObservationTestCase>
     {

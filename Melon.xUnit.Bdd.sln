@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Melon.xUnit.Bdd", "Melon.xUnit.Bdd\Melon.xUnit.Bdd.csproj", "{2F6B45C0-BD2E-4CAA-9692-C27C9F820519}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Melon.xUnit.Bdd.Example", "Melon.xUnit.Bdd.Example\Melon.xUnit.Bdd.Example.csproj", "{48B3C8E9-3489-48EC-93A3-DB48EC7FB24D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Melon.xUnit.Bdd.Example.UnitTest", "Melon.xUnit.Bdd.Example.UnitTest\Melon.xUnit.Bdd.Example.UnitTest.csproj", "{1EFFB91B-643C-4909-8543-058765141BDB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +17,13 @@ Global
 		{2F6B45C0-BD2E-4CAA-9692-C27C9F820519}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F6B45C0-BD2E-4CAA-9692-C27C9F820519}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F6B45C0-BD2E-4CAA-9692-C27C9F820519}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48B3C8E9-3489-48EC-93A3-DB48EC7FB24D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48B3C8E9-3489-48EC-93A3-DB48EC7FB24D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48B3C8E9-3489-48EC-93A3-DB48EC7FB24D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48B3C8E9-3489-48EC-93A3-DB48EC7FB24D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EFFB91B-643C-4909-8543-058765141BDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EFFB91B-643C-4909-8543-058765141BDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EFFB91B-643C-4909-8543-058765141BDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EFFB91B-643C-4909-8543-058765141BDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

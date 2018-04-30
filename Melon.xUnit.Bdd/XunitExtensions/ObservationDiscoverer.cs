@@ -3,7 +3,7 @@ using System.Linq;
 using Xunit.Abstractions;
 using Xunit.Sdk;
 
-namespace XunitExtensions
+namespace Melon.xUnit.Bdd.XunitExtensions
 {
     public class ObservationDiscoverer : TestFrameworkDiscoverer
     {
@@ -14,7 +14,11 @@ namespace XunitExtensions
                                      IMessageSink diagnosticMessageSink)
             : base(assemblyInfo, sourceProvider, diagnosticMessageSink)
         {
-            var testAssembly = new TestAssembly(assemblyInfo, AppDomain.CurrentDomain.SetupInformation.ConfigurationFile);
+            string config = null;
+#if NET452
+            config = AppDomain.CurrentDomain.SetupInformation.ConfigurationFile;
+#endif
+            var testAssembly = new TestAssembly(assemblyInfo, config);
             testCollectionFactory = new CollectionPerClassTestCollectionFactory(testAssembly, diagnosticMessageSink);
         }
 

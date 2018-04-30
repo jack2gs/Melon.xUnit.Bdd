@@ -3,7 +3,7 @@ using System.Linq;
 using Xunit.Abstractions;
 using Xunit.Sdk;
 
-namespace XunitExtensions
+namespace Melon.xUnit.Bdd.XunitExtensions
 {
     public class ObservationTestCaseOrderer : ITestCaseOrderer
     {
